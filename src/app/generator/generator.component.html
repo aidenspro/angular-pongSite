@@ -1,0 +1,112 @@
+
+<body >
+
+  <div id="div3">
+  <app-sidebar class="sidebar" > </app-sidebar>
+  <a class="title"> Password Generator
+  </a>
+  </div >
+
+
+  <div id="div5">
+     <Button  class="first" id="b2" (click)="closeCopy()" (click)="openCopy1()" >
+      Unlock
+    </Button>
+     <Button  class="second" id="b2" (click)="closeCopy()" (click)="openCopy2()">
+      Reset
+    </Button>
+    <Button  class="third" id="b2" (click)="closeCopy()" (click)="openCopy3()">
+      Resolved
+    </Button>
+    <Button  class="fourth" id="b2" (click)="closeCopy()" (click)="openCopy4()">
+      Request
+    </Button>
+     <Button  class="fifth" id="b2" (click)="closeCopy()" (click)="openCopy5()">
+      Update
+    </Button>
+
+  </div >
+
+    <div id="gen1" class="genDiv2" (click)="copyInputMessage('gen1')" >
+     <br>Hello,<br>
+    <br>
+I am glad we were able to unlock your account!  If you have any questions, please contact the ITSC at 1-855-620-4780 or ITSC@sba.gov. You can also respond directly to this email if there are any changes you would like to report.<br>
+Have a wonderful day!<br>
+<br>
+ 
+Thank you,<br>
+Tyler<br>
+ITSC
+    </div>
+
+    <div id="gen2" class="genDiv2" (click)="copyInputMessage('gen2')">
+     Hello, <br>
+ <br> 
+I am glad that we were able to get your password reset!  If you have any questions, please contact the ITSC at 1-855-620-4780 or ITSC@sba.gov. You can also respond directly to this email if there are any changes you would like to report. <br>
+<br>
+ 
+Have a wonderful day!<br>
+<br>
+Thanks,<br>
+Tyler<br>
+ITSC
+    </div>
+
+    <div id="gen3" class="genDiv2" (click)="copyInputMessage('gen3')">
+    Hello,  <br>
+  <br>
+I am glad your issues have been resolved! If you have any questions, please contact the ITSC at 1-855-620-4780 or ITSC@sba.gov. You can also respond directly to this email if there are any changes you would like to report. <br>
+ <br>
+Have a wonderful day! <br>
+ <br>
+Thank you, <br>
+Tyler<br>
+ITSC
+
+    </div>
+
+
+    <div id="gen4" class="genDiv2" (click)="copyInputMessage('gen4')">
+    Hello,<br>
+ <br>
+We have submitted a ticket to (REQUEST) and assigned it to the appropriate group. Once an analyst has reviewed the information in this ticket, they will be in contact with you as soon as they are available. If you have any questions, please contact the ITSC at 1-855-620-4780 or ITSC@sba.gov. You can also respond directly to this email if there are any changes you would like to report. Have a wonderful day!<br>
+ <br>
+Thanks,<br>
+ <br>
+Tyler<br>
+ITSC
+
+    </div>
+
+
+    <div id="gen5" class="genDiv2" (click)="copyInputMessage('gen5')">
+     Hello, <br>
+  <br>
+Thank you for contacting the ITSC in regards to your open ticket. All of our analysts are currently assisting other users at this time. We appreciate your time and patience. Have a wonderful day! <br>
+ <br>
+Thank you, <br>
+Tyler<br>
+ 
+ITSC
+
+    </div>
+
+ <div id="div5">
+    <Button  class="one" id="b1"  (click)="openRand()" (click)="randomNum()" (click)="randomAgain()">
+      Generate
+    </Button>
+
+    <div id="gen" class="genDiv" (click)="copyInputMessage('gen')">
+    {{ getCurrent() }}
+    {{ makeFalse() }}
+    </div>
+   
+    <Button  class="two" id="b1" (click)="closeRand()" >
+      No.
+    </Button>
+ </div>
+
+ <router-outlet></router-outlet>
+ <app-dk></app-dk>
+</body>
+

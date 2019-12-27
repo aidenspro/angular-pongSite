@@ -1,0 +1,16 @@
+<button id="p1" [disabled] = "this.pid == 2" (click)='setPID(1)' > Player1  </button>
+    <button id="p2" [disabled] = "this.pid == 1" (click)='setPID(2)' > Player2  </button>
+   
+    <button (click)='done()' > Done </button>
+  <a *ngIf='(pid == 1)' > You are Player 1 </a>
+
+  <a *ngIf='(pid == 2)' > You are Player 2 </a>
+
+  <a *ngIf='(p1Ready == true && p2Ready == false)' > Waiting on player 2... </a>
+
+  <a *ngIf='(p2Ready == true && p1Ready == false)' > Waiting on player 1... </a>
+
+   
+
+<canvas #canvas width="800px" height="400px" >
+</canvas>
