@@ -64,6 +64,17 @@
   background-color: rgba(250, 247, 240, 0.712);
 }
 
+#bdiv {
+  
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font: Roboto;
+  font-size: 46px;
+  height: 5%;
+  margin-bottom: 0;
+  background-color: rgba(93, 142, 247);
+}
+
 
 #gen{
   font: Roboto;
